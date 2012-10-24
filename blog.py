@@ -15,7 +15,7 @@ def render_str(template, **params):
     t = jinja_env.get_template(template)
     return t.render(params)
 
-#HASHING SECURE FUNCTIONS
+#HASHING SECURE FUNCTIONS and these are some changes for a second commit
 def hash_str(s):
     x = secret + s
     return hashlib.md5(x).hexdigest()
