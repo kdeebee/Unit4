@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Sign up now! </title>
+    <link type="text/css" href="css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      .label {text-align: right}
+      .error {color: red}
+    </style>
+
+  </head>
+
+  <body>
+  <script src="js/bootstrap.js"></script>
+    <h2>Signup</h2>
+    <form method="post" class="well span10">
+      <table>
+        <tr>
+          <td class="label span2">
+            Username
+          </td>
+          <td>
+            <input type="text" name="username" value="{{username}}">
+          </td>
+          <td class="error">
+            {{error_username}} {{error_exists}}
+          </td>
+        </tr>
+
+        <tr>
+          <td class="label span2">
+            Password
+          </td>
+          <td>
+            <input type="password" name="password" value="">
+          </td>
+          <td class="error">
+            {{error_password}}
+          </td>
+        </tr>
+
+        <tr>
+          <td class="label span2">
+            Verify Password
+          </td>
+          <td>
+            <input type="password" name="verify" value="">
+          </td>
+          <td class="error">
+            {{error_verify}}
+          </td>
+        </tr>
+
+        <tr>
+          <td class="label span2">
+            Email (optional)
+          </td>
+          <td>
+            <input type="text" name="email" value="{{email}}">
+          </td>
+          <td class="error">
+            {{error_email}}
+          </td>
+        </tr>
+      </table>
+		<br>
+      <input type="submit" class="btn btn-primary btn-large span2">
+    </form>
+  </body>
+
+</html>
